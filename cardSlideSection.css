@@ -1,0 +1,117 @@
+/* section: Featured experiences */
+/* section: Our Collection */
+
+.card-section {
+  padding: 5rem var(--gap);
+  width: var(--width);
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.card-section:last-child {
+  background-color: #000;
+}
+
+.card-section:last-child p,
+.card-section:last-child h2 {
+  color: #fff;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px #000 solid;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+.card-section:last-child .section-title {
+  border-top: 1px #fff solid;
+}
+
+.section-title>h2 {
+  font-size: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+}
+
+.section-title>button {
+  background-color: transparent;
+  border: none;
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  height: fit-content;
+  transition: all .3s ease;
+}
+
+.card-section:last-child button {
+  color: #fff;
+}
+
+.section-title>button:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 100px;
+  padding: 4px 16px;
+}
+.card-section:last-child button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.cards {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 48px;
+}
+
+.cards>li {
+  width: 30vw;
+  min-width: 30vw;
+  margin-right: var(--gap);
+}
+
+.card-img {
+  overflow: hidden;
+  transition: all .3s ease;
+}
+
+.card-img>img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all .3s ease;
+}
+
+.card-img:hover {
+  border-radius: 40px;
+}
+
+.card-img:hover img {
+  transform: scale(1.1);
+}
+
+.cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards::-webkit-scrollbar-track {
+  background: lightgray;
+  border-radius: 8px;
+}
+
+.card-section:last-child .cards::-webkit-scrollbar-track {
+  background: gray;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 8px;
+}
+
+.card-section:last-child .cards::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+.cards::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
