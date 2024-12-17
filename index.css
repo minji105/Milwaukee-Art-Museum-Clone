@@ -2,6 +2,8 @@
   --gap: 2rem;
   --width: calc(100% - var(--gap) * 2);
   --border-padding-top: 8px;
+  --blue: #238fe7;
+  --darkblue: #1574c2;
 }
 
 body {

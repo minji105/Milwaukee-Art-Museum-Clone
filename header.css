@@ -31,9 +31,9 @@ header>a {
 }
 
 header>button:hover {
-  background-color: #238fe7;
+  background-color: var(--blue);
 }
 
 header>a:hover {
-  color: #238fe7;
+  color: var(--blue);
 }

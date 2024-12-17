@@ -10,7 +10,7 @@
 }
 
 .card-section:last-child {
-  background-color: #000;
+  background-color: #0d151a;
 }
 
 .card-section:last-child p,
@@ -46,14 +46,25 @@
 
 .cards {
   display: flex;
+  align-items: end;
   overflow-x: scroll;
   padding-bottom: 48px;
+  cursor: grab;
 }
 
 .cards>li {
-  width: 30vw;
-  min-width: 30vw;
+  width: 29vw;
+  min-width: 29vw;
   margin-right: var(--gap);
+}
+
+.cards>li:last-child {
+  margin-right: 0;
+}
+
+.card-section:last-child .cards>li {
+  width: 21vw;
+  min-width: 21vw;
 }
 
 .card-img {
@@ -74,6 +85,43 @@
 
 .card-img:hover img {
   transform: scale(1.1);
+}
+
+.card-text {
+  min-height: 128px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-section:last-child .card-text {
+  min-height: 112px;
+}
+
+.card-text>h3 {
+  font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+}
+
+.card-text>h3>p:first-child {
+  font-weight: 400;
+  color: gray;
+}
+
+.date {
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+}
+
+.card-title {
+  transition: color .3s ease;
+}
+
+.card-section:last-child .card-text:hover .card-title {
+  color: var(--blue);
+}
+
+.card-text:hover .card-title {
+  color: var(--darkblue);
 }
 
 .cards::-webkit-scrollbar {
