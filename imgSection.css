@@ -1,0 +1,31 @@
+.img-section {
+  overflow: hidden;
+  position: relative;
+  max-height: 800px;
+}
+
+.img-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(360deg, rgba(13, 21, 26, 0.64) 0%, rgba(13, 21, 26, 0.56) 23.7%, rgba(13, 21, 26, 0) 100%);
+}
+
+.img-section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-section .section-title {
+  position: absolute;
+  bottom: 1rem;
+  color: #fff;
+  z-index: 10;
+  border-color: #fff;
+  width: var(--width);
+  margin-left: var(--gap);
+  text-transform: uppercase;
+}

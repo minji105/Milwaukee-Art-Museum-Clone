@@ -5,7 +5,6 @@
   padding: 5rem var(--gap);
   width: var(--width);
   position: relative;
-  z-index: 100;
   background-color: #fff;
 }
 
@@ -21,10 +20,11 @@
 .section-title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   border-top: 1px #000 solid;
   padding-top: var(--border-padding-top);
   padding-bottom: 24px;
+  gap: 10rem;
 }
 
 .card-section2 .section-title {
@@ -35,11 +35,13 @@
   font-size: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
 }
 
-.card-section2 .button {
+.card-section2 .button,
+.img-section .button {
   color: #fff;
 }
 
-.card-section2 .button:hover {
+.card-section2 .button:hover,
+.img-section .button:hover {
   background-color: #fff;
   color: #000;
 }

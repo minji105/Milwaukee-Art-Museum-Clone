@@ -6,14 +6,16 @@
   font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
   height: fit-content;
   transition: all .3s ease;
-  padding: 4px 0;
+  padding: 8px 0;
+  text-wrap: nowrap;
+  line-height: 1.1;
 }
 
 .button:hover {
   background-color: #000;
   color: #fff;
   border-radius: 100px;
-  padding: 4px 16px;
+  padding: 8px 16px;
 }
 
 .status {

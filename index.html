@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="./cardSlideSection.css">
   <link rel="stylesheet" href="./gridSection.css">
+  <link rel="stylesheet" href="./imgSection.css">
   <link rel="stylesheet" href="./footer.css">
   <link rel="stylesheet" href="./index.css">
   <title>Milwaukee Art Museum</title>
@@ -245,6 +246,14 @@
       </div>
     </section>
 
+    <section class="img-section">
+      <img class="img" src="./public/images/background/membership.webp" alt="membership">
+      <div class="section-title">
+        <h2>Enjoy free, unlimited visits and Member-Only benefits.</h2>
+        <button class="button">Become a Member</button>
+      </div>
+    </section>
+
     <section class="grid-section grid-section2">
       <div>
         <div class="text">
@@ -256,6 +265,14 @@
     </section>
   </main>
 
+  <section class="img-section">
+    <img class="img" src="./public/images/background/enews.webp" alt="enews">
+    <div class="section-title">
+      <h2>Get updates in your inbox about exhibitions, events, and more.</h2>
+      <button class="button">Subscribe</button>
+    </div>
+  </section>
+
   <footer>
     <div class="status">
       <div>
@@ -264,7 +281,9 @@
       </div>
       <button id="topButton">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 11.81V22h1.5V11.81l3.72 3.72 1.06-1.06-5-5a.75.75 0 0 0-1.06 0l-5 5 1.06 1.06 3.72-3.72ZM5 4.75v-1.5h14v1.5H5Z" fill="#0D151A" fill-opacity=".96"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M11.25 11.81V22h1.5V11.81l3.72 3.72 1.06-1.06-5-5a.75.75 0 0 0-1.06 0l-5 5 1.06 1.06 3.72-3.72ZM5 4.75v-1.5h14v1.5H5Z"
+            fill="#0D151A" fill-opacity=".96"></path>
         </svg>
       </button>
     </div>
@@ -319,7 +338,7 @@
         </ul>
       </div>
     </nav>
-    
+
     <div class="links">
       <div>
         <ul>
@@ -345,6 +364,7 @@
   </footer>
 
   <script src="./index.js"></script>
+  <script src="./intersectionObserver.js"></script>
 </body>
 
 </html>

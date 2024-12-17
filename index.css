@@ -1,7 +1,7 @@
 :root {
   --gap: 2rem;
   --width: calc(100% - var(--gap) * 2);
-  --border-padding-top: 8px;
+  --border-padding-top: 16px;
   --blue: #238fe7;
   --darkblue: #1574c2;
   --black: #0d151a;
