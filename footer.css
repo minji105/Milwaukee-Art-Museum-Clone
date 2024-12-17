@@ -1,0 +1,62 @@
+footer {
+  background-color: var(--black);
+  padding: 7rem var(--gap);
+  width: var(--width);
+  color: #fff;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  margin-bottom: 7rem;
+}
+
+nav h2 {
+  padding: 12px 0 8px;
+  text-transform: uppercase;
+  color: lightgray;
+  font-size: clamp(0.75rem, 0.706rem + 0.1878vw, 0.875rem);
+}
+
+
+nav li,
+.links li {
+  line-height: 2rem;
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  font-weight: 600;
+}
+
+.links p {
+  line-height: 2rem;
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  color: gray;
+}
+
+nav li span,
+.links li span {
+  background-image: linear-gradient(to right, #fff 0, #fff 100%);
+  background-position: 0 1.3em;
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+nav li span:hover,
+.links li span:hover {
+  background-size: 100% 1px;
+  color: var(--blue);
+}
+
+.links {
+  border-top: 1px rgb(83, 83, 83) solid;
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links ul {
+  display: flex;
+  gap: 1rem;
+}

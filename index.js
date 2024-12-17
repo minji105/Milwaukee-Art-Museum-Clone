@@ -1,10 +1,17 @@
 const headline = document.getElementById("headline");
 const cardsList = document.querySelectorAll('.cards');
+const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
   headline.style.transform = `translateY(${scrollY * - 2}px)`;
+
+  if (scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
 })
 
 cardsList.forEach(cards => {

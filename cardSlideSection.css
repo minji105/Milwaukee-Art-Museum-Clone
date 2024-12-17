@@ -10,7 +10,7 @@
 }
 
 .card-section2 {
-  background-color: #0d151a;
+  background-color: var(--black);
 }
 
 .card-section2 p,

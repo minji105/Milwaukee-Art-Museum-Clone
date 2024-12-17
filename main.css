@@ -31,7 +31,8 @@
   margin-left: var(--gap);
 }
 
-.headline>p {
+.headline>p,
+.footer-logo>p {
   font-size: clamp(3rem, 1.2394rem + 7.5117vw, 8rem);
   line-height: clamp(3rem, 1.2394rem + 7.5117vw, 8rem);
   padding: .3rem 0 .7rem;
@@ -50,5 +51,9 @@
 
 .headline>p:last-child {
   text-align: center;
+  border-bottom: 1px #fff solid;
+}
+
+.footer-logo>p:last-child {
   border-bottom: 1px #fff solid;
 }
