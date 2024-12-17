@@ -9,6 +9,9 @@
   padding: 8px 0;
   text-wrap: nowrap;
   line-height: 1.1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .button:hover {
@@ -16,6 +19,15 @@
   color: #fff;
   border-radius: 100px;
   padding: 8px 16px;
+}
+
+.button:hover path {
+  fill: #fff;
+}
+
+.card-section2 .button:hover path,
+.img-section .button:hover path {
+  fill: #000;
 }
 
 .status {
@@ -104,9 +116,5 @@
 
 .hero>p:last-child {
   text-align: center;
-  border-bottom: 1px #fff solid;
-}
-
-.footer-logo>p:last-child {
   border-bottom: 1px #fff solid;
 }

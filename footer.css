@@ -9,6 +9,10 @@ footer {
   margin-top: 1rem;
 }
 
+.footer-logo>p:last-child {
+  border-bottom: 1px #fff solid;
+}
+
 nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

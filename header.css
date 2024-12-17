@@ -35,11 +35,22 @@ header button {
   background-color: #fff;
   font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
   transition: all .5s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 header.scrolled button {
   background-color: #000;
   color: #fff;
+}
+
+header.scrolled button path {
+  fill: #fff;
+}
+
+header.scrolled button:hover path {
+  fill: #000;
 }
 
 header a {
