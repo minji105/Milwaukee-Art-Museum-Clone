@@ -1,6 +1,7 @@
 const headline = document.getElementById("headline");
 const cardsList = document.querySelectorAll('.cards');
 const header = document.querySelector("header");
+const topButton = document.getElementById("topButton");
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
@@ -42,4 +43,11 @@ cardsList.forEach(cards => {
     const walk = x - startX1;
     cards.scrollLeft = scrollLeft1 - walk;
   });
+})
+
+topButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
 })

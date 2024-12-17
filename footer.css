@@ -1,8 +1,12 @@
 footer {
   background-color: var(--black);
-  padding: 7rem var(--gap);
+  padding: 1rem var(--gap) 7rem;
   width: var(--width);
   color: #fff;
+}
+
+.footer-logo {
+  margin-top: 1rem;
 }
 
 nav {
