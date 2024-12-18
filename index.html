@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./header.css">
-  <link rel="stylesheet" href="./main.css">
-  <link rel="stylesheet" href="./cardSlideSection.css">
-  <link rel="stylesheet" href="./gridSection.css">
-  <link rel="stylesheet" href="./imgSection.css">
-  <link rel="stylesheet" href="./footer.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/cardSlideSection.css">
+  <link rel="stylesheet" href="./style/gridSection.css">
+  <link rel="stylesheet" href="./style/imgSection.css">
+  <link rel="stylesheet" href="./style/footer.css">
   <link rel="stylesheet" href="./index.css">
   <title>Milwaukee Art Museum</title>
 </head>
@@ -49,7 +49,7 @@
       </h1>
     </section>
 
-    <section class="card-section">
+    <section class="card-section light-theme">
       <div class="section-title">
         <h2>Featured experiences</h2>
         <button class="button">See what’s on
@@ -126,7 +126,7 @@
       </div>
     </section>
 
-    <section class="card-section card-section2">
+    <section class="card-section dark-theme">
       <div class="section-title">
         <h2>Our Collection</h2>
         <button class="button">Explore more artworks
@@ -262,7 +262,7 @@
       </div>
     </section>
 
-    <section class="img-section">
+    <section class="img-section dark-theme">
       <img class="img" src="./public/images/background/membership.webp" alt="membership">
       <div class="section-title">
         <h2>Enjoy free, unlimited visits and Member-Only benefits.</h2>
@@ -274,7 +274,11 @@
       </div>
     </section>
 
-    <section class="grid-section grid-section2">
+    <section class="">
+
+    </section>
+
+    <section class="grid-section reverse">
       <div>
         <div class="text">
           <h2>Help sustain this vibrant arts destination.</h2>
@@ -287,19 +291,19 @@
         <img src="./public/images/architecture.webp" alt="architecture">
       </div>
     </section>
-  </main>
 
-  <section class="img-section">
-    <img class="img" src="./public/images/background/enews.webp" alt="enews">
-    <div class="section-title">
-      <h2>Get updates in your inbox about exhibitions, events, and more.</h2>
-      <button class="button">Subscribe
-        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.19 12.75H5v-1.5h12.19l-5.72-5.72 1.06-1.06 7 7a.75.75 0 0 1 0 1.06l-7 7-1.06-1.06 5.72-5.72Z" fill="#fff"></path>
-        </svg>
-      </button>
-    </div>
-  </section>
+    <section class="img-section dark-theme">
+      <img class="img" src="./public/images/background/enews.webp" alt="enews">
+      <div class="section-title">
+        <h2>Get updates in your inbox about exhibitions, events, and more.</h2>
+        <button class="button">Subscribe
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.19 12.75H5v-1.5h12.19l-5.72-5.72 1.06-1.06 7 7a.75.75 0 0 1 0 1.06l-7 7-1.06-1.06 5.72-5.72Z" fill="#fff"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="status">
@@ -391,8 +395,8 @@
     </div>
   </footer>
 
-  <script src="./index.js"></script>
-  <script src="./intersectionObserver.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/intersectionObserver.js"></script>
 </body>
 
 </html>

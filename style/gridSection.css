@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.grid-section2>div {
+.reverse>div {
   grid-template-areas:
     "img img ."
     "img img text";
