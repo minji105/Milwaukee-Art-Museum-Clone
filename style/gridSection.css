@@ -1,10 +1,13 @@
 .grid-section {
-  background-color: #f4af16;
   padding: calc(var(--gap) * 1.5) var(--gap) var(--gap);
   width: var(--width);
 }
 
-.grid-section:last-child {
+.yellow {
+  background-color: #f4af16;
+}
+
+.green {
   background-color: #259b8d;
 }
 
