@@ -1,44 +1,5 @@
 /* section: intro */
 
-.button {
-  background-color: transparent;
-  border: none;
-  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
-  height: fit-content;
-  transition: all .3s ease;
-  padding: 8px 0;
-  text-wrap: nowrap;
-  line-height: 1.1;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.dark-theme .button {
-  color: #fff;
-}
-
-.button:hover {
-  background-color: #000;
-  color: #fff;
-  border-radius: 100px;
-  padding: 8px 16px;
-}
-
-.dark-theme .button:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.button:hover path {
-  fill: #fff;
-}
-
-.dark-theme .button:hover path,
-.dark-theme .button:hover path {
-  fill: #000;
-}
-
 .status {
   display: flex;
   justify-content: space-between;
@@ -90,10 +51,40 @@
   }
 }
 
-.intro>img {
+.arrow-button button {
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+}
+
+.arrow-button button:hover {
+  background-color: #fff;
+}
+
+.arrow-button button:hover path {
+  fill: #000;
+}
+
+.img-slide {
   height: 100vh;
   width: 100vw;
+  position: relative;
+}
+
+.img-slide>img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-out;
+  z-index: -1;
+  opacity: 0;
+}
+
+.img-slide > img.active {
+  opacity: 1;
 }
 
 .headline {
@@ -127,4 +118,3 @@
   text-align: center;
   border-bottom: 1px #fff solid;
 }
-

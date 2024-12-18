@@ -35,3 +35,42 @@ ul, li {
   list-style: none;
 }
 
+
+.button {
+  background-color: transparent;
+  border: none;
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  height: fit-content;
+  transition: all .3s ease;
+  padding: 8px 0;
+  text-wrap: nowrap;
+  line-height: 1.1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dark-theme .button {
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 100px;
+  padding: 8px 16px;
+}
+
+.dark-theme .button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.button:hover path {
+  fill: #fff;
+}
+
+.dark-theme .button:hover path,
+.dark-theme .button:hover path {
+  fill: #000;
+}
