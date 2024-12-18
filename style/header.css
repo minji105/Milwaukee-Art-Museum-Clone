@@ -53,14 +53,14 @@ header.scrolled button:hover path {
   fill: #000;
 }
 
-header a {
+header span {
   font-size: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
   font-weight: 900;
   transition: all .3s ease;
   color: #fff;
 }
 
-header.scrolled a {
+header.scrolled span {
   color: #000;
 }
 
@@ -69,6 +69,6 @@ header button:hover {
   color: #000;
 }
 
-header a:hover {
+header span:hover {
   color: var(--blue);
 }
