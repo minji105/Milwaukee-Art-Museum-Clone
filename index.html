@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/menu.css">
   <link rel="stylesheet" href="./style/intro.css">
   <link rel="stylesheet" href="./style/cardSlideSection.css">
   <link rel="stylesheet" href="./style/gridSection.css">
@@ -22,7 +23,7 @@
 <body>
   <header>
     <div>
-      <button>Menu</button>
+      <button id="menu-button">Menu</button>
       <a href="/">MILWAUKEE ART MUSEUM</a>
       <button>Visit
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +35,57 @@
     </div>
   </header>
 
-  <main>
+  <div class="menu">
+    <div class="menu-wrapper">
+      <div class="status">
+        <div>
+          <div class="circle"></div>
+          <span>Cloed today</span>
+        </div>
+      </div>
+      <div class="hero-dark">
+        <div class="menu-title">
+          <p>What's On</p>
+          <ul class="menu-list">
+            <li>Exhibitions</li>
+            <li>In the Galleries</li>
+            <li>Events</li>
+          </ul>
+        </div>
+        <div class="menu-title">
+          <p>Visit</p>
+        </div>
+        <div class="menu-title">
+          <p>Collection</p>
+        </div>
+      </div>
+      <div class="links">
+        <div>
+          <ul>
+            <li><span>MAM at Home</span></li>
+            <li><span>Learn + Play</span></li>
+            <li><span>Membership</span></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><span>Support</span></li>
+            <li><span>Contact Us</span></li>
+            <li><span>Get Involved</span></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><span>Museum Info</span></li>
+            <li><span>Shop</span></li>
+            <li><span>Search</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
     <section class="intro">
       <div class="img-slide">
         <img src="./public/images/intro/1ffc8d520441576783647fd093fc80ec.jpg" alt="museum interior1">
@@ -53,14 +104,16 @@
               <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24"
                 width="20" height="20">
                 <path
-                  d="M16.041,24,6.534,14.48a3.507,3.507,0,0,1,0-4.948L16.052,0,18.17,2.121,8.652,11.652a.5.5,0,0,0,0,.707l9.506,9.52Z" fill="#fff"/>
+                  d="M16.041,24,6.534,14.48a3.507,3.507,0,0,1,0-4.948L16.052,0,18.17,2.121,8.652,11.652a.5.5,0,0,0,0,.707l9.506,9.52Z"
+                  fill="#fff" />
               </svg>
             </button>
             <button id="next">
               <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24"
                 width="20" height="20">
                 <path
-                  d="M8.127,24l9.507-9.52a3.507,3.507,0,0,0,0-4.948L8.116,0,6,2.121l9.518,9.531a.5.5,0,0,1,0,.707L6.01,21.879Z" fill="#fff" />
+                  d="M8.127,24l9.507-9.52a3.507,3.507,0,0,0,0-4.948L8.116,0,6,2.121l9.518,9.531a.5.5,0,0,1,0,.707L6.01,21.879Z"
+                  fill="#fff" />
               </svg>
             </button>
           </div>
@@ -434,11 +487,11 @@
       </button>
     </div>
 
-    <div class="footer-logo">
-      <p>Milwaukee</p>
-      <p>Art</p>
-      <p>Museum</p>
-      <p>&nbsp;</p>
+    <div class="hero-dark">
+      <div>Milwaukee</div>
+      <div>Art</div>
+      <div>Museum</div>
+      <div class="last">&nbsp;</div>
     </div>
 
     <nav>
@@ -510,6 +563,7 @@
   </footer>
 
   <script src="./js/index.js"></script>
+  <script src="./js/menu.js"></script>
   <script src="./js/cardSlide.js"></script>
   <script src="./js/intersectionObserver.js"></script>
   <script src="./js/introImgSlide.js"></script>

@@ -7,7 +7,7 @@ window.addEventListener("scroll", () => {
 
   headline.style.transform = `translateY(${scrollY * - 1.5}px)`;
 
-  if (scrollY > 50) {
+  if (scrollY > 50 && !menuOpen) {
     header.classList.add('scrolled');
   } else {
     header.classList.remove('scrolled');

@@ -1,0 +1,106 @@
+.menu {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black);
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+.menu.open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+.menu.close {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+#menu-button.toggle {
+  border: 1px #fff solid;
+  background-color: var(--black);
+  color: #fff;
+}
+
+.menu-wrapper {
+  width: var(--width);
+  height: calc(100% - 9rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4.5rem var(--gap);
+}
+
+.menu .status {
+  margin-top: 16px;
+}
+
+.menu .status .circle {
+  margin: 1.5rem var(--gap) 1rem 0;
+}
+
+.menu-title {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  z-index: 10;
+  background-color: var(--black);
+}
+
+.menu-title p {
+  transition: all .3s ease;
+}
+
+.menu-list {
+  color: #fff;
+  max-height: 0;
+  margin-top: 4px;
+  transition: max-height .6s ease, transform .3s ease;
+  font-weight: 900;
+  line-height: 2rem;
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+}
+
+.menu-list li {
+  width: fit-content;
+  transition: all .3s ease;
+  list-style: '-';
+  margin-left: 6px;
+  padding-left: 1rem;
+}
+
+.menu-list li:hover{
+  color: lightgray;
+}
+
+.menu-title:hover .menu-list {
+  max-height: 500px;
+  transform: translateX(3rem);
+  opacity: 1;
+}
+
+.menu-title:hover p {
+  color: var(--blue);
+  transform: translateX(3rem);
+}
+
+.menu .links {
+  margin: 0;
+  padding: 0 50% 0 0;
+  border-top: 1px #fff solid;
+}
+
+.menu .links ul {
+  padding-top: 1rem;
+  color: #fff;
+  display: block;
+  z-index: 10;
+  background-color: var(--black);
+}

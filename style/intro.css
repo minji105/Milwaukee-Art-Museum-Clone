@@ -97,7 +97,7 @@
 }
 
 .hero>p,
-.footer-logo>p {
+.hero-dark div {
   font-size: clamp(3rem, 1.2394rem + 7.5117vw, 8rem);
   line-height: clamp(3rem, 1.2394rem + 7.5117vw, 8rem);
   padding: .3rem 0 .7rem;
@@ -116,5 +116,12 @@
 
 .hero>p:last-child {
   text-align: center;
+  border-bottom: 1px #fff solid;
+}
+.hero-dark {
+  margin-top: 1rem;
+}
+
+.hero-dark .last {
   border-bottom: 1px #fff solid;
 }
