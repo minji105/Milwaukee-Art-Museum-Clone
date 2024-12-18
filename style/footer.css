@@ -43,8 +43,8 @@ nav li,
 
 nav li span,
 .links li span {
-  background-image: linear-gradient(to right, #fff 0, #fff 100%);
-  background-position: 0 1.3em;
+  background-image: linear-gradient(to right, #ffffffe0 0, #ffffffe0 100%);
+  background-position: 0 1.25em;
   background-size: 0 1px;
   background-repeat: no-repeat;
   transition: all .3s ease;

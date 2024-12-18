@@ -5,7 +5,7 @@ const topButton = document.getElementById("topButton");
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
-  headline.style.transform = `translateY(${scrollY * - 2}px)`;
+  headline.style.transform = `translateY(${scrollY * - 1.5}px)`;
 
   if (scrollY > 50) {
     header.classList.add('scrolled');
