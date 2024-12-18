@@ -7,7 +7,7 @@
   --black: #0d151a;
 }
 
-body {
+html, body {
   width: 100%;
   padding: 0;
   margin: 0;
