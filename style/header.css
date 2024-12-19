@@ -58,6 +58,7 @@ header span {
   font-weight: 900;
   transition: all .3s ease;
   color: #fff;
+  letter-spacing: -1.5px;
 }
 
 header.scrolled span {
@@ -71,4 +72,27 @@ header button:hover {
 
 header span:hover {
   color: var(--blue);
+}
+
+.mobile svg {
+  margin-top: 4px;
+}
+
+.mobile {
+  position: fixed;
+  bottom: var(--gap);
+  left: var(--gap);
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header>div {
+    justify-content: center;
+  }
 }

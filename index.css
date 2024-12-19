@@ -7,6 +7,12 @@
   --black: #0d151a;
 }
 
+@media screen and (max-width: 767px) {
+  :root {
+    --gap: 1rem;
+  }
+}
+
 html, body {
   width: 100%;
   padding: 0;

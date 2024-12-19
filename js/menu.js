@@ -1,33 +1,37 @@
 const menu = document.querySelector(".menu");
-const menuButton = document.getElementById("menu-button");
+const menuButtons = document.querySelectorAll("#menu-button");
 const main = document.querySelector(".main");
 const footer = document.querySelector("footer");
 
 let menuOpen = false;
 
-menuButton.addEventListener("click", () => {
-  if (menu.classList.contains("open")) {
-    // menu close
+menuButtons.forEach((menuButton) => {
+  menuButton.addEventListener("click", () => {
+    if (menu.classList.contains("open")) {
+      // menu close
 
-    menu.classList.remove("open");
-    menu.classList.add("close");
-    if (window.scrollY > 0)
-      header.classList.add("scrolled");
+      menu.classList.remove("open");
+      menu.classList.add("close");
+      if (window.scrollY > 0)
+        header.classList.add("scrolled");
 
-    document.body.style.overflow = "auto";
+      document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
 
-    menuOpen = false;
-  } else {
-    // menu open
+      menuOpen = false;
+    } else {
+      // menu open
 
-    menu.classList.remove("close");
-    menu.classList.add("open");
-    header.classList.remove("scrolled");
+      menu.classList.remove("close");
+      menu.classList.add("open");
+      header.classList.remove("scrolled");
 
-    document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
 
-    menuOpen = true;
-  }
+      menuOpen = true;
+    }
 
-  menuButton.classList.toggle("toggle");
+    menuButton.classList.toggle("toggle");
+  })
 })

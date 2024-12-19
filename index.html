@@ -23,9 +23,9 @@
 <body>
   <header>
     <div>
-      <button id="menu-button">Menu</button>
+      <button id="menu-button" class="pc">Menu</button>
       <span>MILWAUKEE ART MUSEUM</span>
-      <button>Visit
+      <button class="pc">Visit
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M17.19 12.75H5v-1.5h12.19l-5.72-5.72 1.06-1.06 7 7a.75.75 0 0 1 0 1.06l-7 7-1.06-1.06 5.72-5.72Z"
@@ -33,6 +33,20 @@
         </svg>
       </button>
     </div>
+    <button id="menu-button" class="mobile">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+        y="0px" viewBox="0 0 490.667 490.667" style="enable-background:new 0 0 490.667 490.667;" xml:space="preserve"
+        width="24" height="24">
+        <g>
+          <path
+            d="M469.333,224h-448C9.551,224,0,233.551,0,245.333c0,11.782,9.551,21.333,21.333,21.333h448   c11.782,0,21.333-9.551,21.333-21.333C490.667,233.551,481.115,224,469.333,224z" />
+          <path
+            d="M21.333,117.333h448c11.782,0,21.333-9.551,21.333-21.333s-9.551-21.333-21.333-21.333h-448C9.551,74.667,0,84.218,0,96   S9.551,117.333,21.333,117.333z" />
+          <path
+            d="M469.333,373.333h-448C9.551,373.333,0,382.885,0,394.667C0,406.449,9.551,416,21.333,416h448   c11.782,0,21.333-9.551,21.333-21.333C490.667,382.885,481.115,373.333,469.333,373.333z" />
+        </g>
+      </svg>
+    </button>
   </header>
 
   <div class="menu">
@@ -194,7 +208,7 @@
 
     <section class="grid-section yellow">
       <div>
-        <div class="text">
+        <div class="section-title">
           <h2>Curious about the Museum’s iconic architecture?</h2>
           <button class="button">Learn about the campus
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -347,7 +361,7 @@
     </section>
 
     <section class="img-section dark-theme">
-      <img class="img" src="./public/images/background/membership.webp" alt="membership">
+      <img class="img first" src="./public/images/background/membership.webp" alt="membership">
       <div class="section-title">
         <h2>Enjoy free, unlimited visits and Member-Only benefits.</h2>
         <button class="button">Become a Member
@@ -360,7 +374,7 @@
       </div>
     </section>
 
-    <section class="x-scroll light-theme">
+    <section class="explore light-theme">
       <div class="section-title">
         <h2>Explore more</h2>
         <button class="button">Plan your visit
@@ -443,7 +457,7 @@
 
     <section class="grid-section reverse green">
       <div>
-        <div class="text">
+        <div class="section-title">
           <h2>Help sustain this vibrant arts destination.</h2>
           <button class="button">Donate to the Museum
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -458,7 +472,7 @@
     </section>
 
     <section class="img-section dark-theme">
-      <img class="img" src="./public/images/background/enews.webp" alt="enews">
+      <img class="img second" src="./public/images/background/enews.webp" alt="enews">
       <div class="section-title">
         <h2>Get updates in your inbox about exhibitions, events, and more.</h2>
         <button class="button">Subscribe
@@ -490,8 +504,8 @@
     <div class="hero-dark">
       <div>Milwaukee</div>
       <div>Art</div>
-      <div>Museum</div>
-      <div class="last">&nbsp;</div>
+      <div class="last">Museum</div>
+      <!-- <div class="last">&nbsp;</div> -->
     </div>
 
     <nav>

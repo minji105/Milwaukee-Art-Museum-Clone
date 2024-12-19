@@ -23,10 +23,18 @@
   transition: opacity .3s ease, visibility .3s ease;
 }
 
+#menu-button {
+  border: 1px #fff solid;
+}
+
 #menu-button.toggle {
   border: 1px #fff solid;
   background-color: var(--black);
   color: #fff;
+}
+
+#menu-button.toggle path {
+  fill: #fff;
 }
 
 .menu-wrapper {
@@ -39,11 +47,11 @@
 }
 
 .menu .status {
-  margin-top: 16px;
+  margin: 1.5rem 0;
 }
 
 .menu .status .circle {
-  margin: 1.5rem var(--gap) 1rem 0;
+  margin-right: var(--gap);
 }
 
 .menu-title {
@@ -61,11 +69,11 @@
 .menu-list {
   color: #fff;
   max-height: 0;
-  margin-top: 4px;
   transition: max-height .6s ease, transform .3s ease;
   font-weight: 900;
   line-height: 2rem;
   font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  transform: translateY(4px);
 }
 
 .menu-list li {
@@ -74,6 +82,9 @@
   list-style: '-';
   margin-left: 6px;
   padding-left: 1rem;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
 }
 
 .menu-list li:hover{
@@ -103,4 +114,18 @@
   display: block;
   z-index: 10;
   background-color: var(--black);
+}
+
+@media screen and (max-width: 767px) {
+  .menu .links {
+    padding: 0;
+    border-top: 1px #fff solid;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #menu-button svg{
+    width: 16px;
+    height: 16px;
+  }
 }
