@@ -1,8 +1,7 @@
 .img-section {
   overflow: hidden;
   position: relative;
-  min-height: 400px;
-  max-height: 800px;
+  height: 100vh;
 }
 
 .img-section::after {
@@ -17,6 +16,7 @@
 
 .img-section img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -37,19 +37,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .img-section {
-    overflow: hidden;
-    position: relative;
-    max-height: 600px;
-  }
-  .img-section img {
-    scale: 1.5;
-  }
   .first {
-    transform-origin: center top;
+    object-position: left;
   }
   .second {
-    transform-origin: right top;
+    object-position: right;
   }
 
   .img-section .section-title  h2{
@@ -58,17 +50,13 @@
 }
 
 @media screen and (max-width: 479px) {
-  .img-section img {
-    scale: 2;
+  .img-section {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
   }
+  
   .first {
-    transform-origin: center top;
-  }
-  .second {
-    transform-origin: right top;
-  }
-
-  .img-section .section-title  h2{
-    width: 100%;
+    object-position: -15vw;
   }
 }

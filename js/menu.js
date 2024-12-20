@@ -12,9 +12,11 @@ menuButtons.forEach((menuButton) => {
 
       menu.classList.remove("open");
       menu.classList.add("close");
+
       if (window.scrollY > 0)
         header.classList.add("scrolled");
 
+      lenis.start();
       document.body.style.overflow = "auto";
       document.documentElement.style.overflow = "auto";
 
@@ -26,6 +28,7 @@ menuButtons.forEach((menuButton) => {
       menu.classList.add("open");
       header.classList.remove("scrolled");
 
+      lenis.stop();
       document.body.style.overflow = "hidden";
       document.documentElement.style.overflow = "hidden";
 

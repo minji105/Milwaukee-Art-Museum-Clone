@@ -3,35 +3,35 @@ gsap.registerPlugin(ScrollToPlugin);
 const cardsList = document.querySelectorAll('.cards');
 
 cardsList.forEach(cards => {
-  let isDown1 = false;
-  let startX1;
-  let scrollLeft1;
+  let isDown = false;
+  let startX;
+  let scrollLeft;
 
   cards.addEventListener('mousedown', e => {
-    isDown1 = true;
-    startX1 = e.pageX - cards.offsetLeft;
-    scrollLeft1 = cards.scrollLeft;
+    isDown = true;
+    startX = e.pageX - cards.offsetLeft;
+    scrollLeft = cards.scrollLeft;
     cards.style.cursor = 'grabbing';
     e.preventDefault();
   });
 
   cards.addEventListener('mouseleave', () => {
-    isDown1 = false;
+    isDown = false;
   });
 
   cards.addEventListener('mouseup', () => {
-    isDown1 = false;
+    isDown = false;
     cards.style.cursor = 'grab';
   });
 
   cards.addEventListener('mousemove', e => {
-    if (!isDown1) return;
+    if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - cards.offsetLeft;
-    const walk = x - startX1;
+    const walk = x - startX;
 
     gsap.to(cards, {
-      scrollLeft: scrollLeft1 - walk,
+      scrollLeft: scrollLeft - walk,
       ease: "power1.out", 
       duration: 1 
     });
